@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Noticias NewsLive</title>
+    <link rel="stylesheet" href="Noticias.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/Logoprincipal.png" alt="Logo NewsLive" class="logo">
+        <h1>Portal de Noticias "NewsLive"</h1>
+        <p id="fecha-actual"></p>
+        <p id="hora"></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Deportes</a></li>
+            <li><a href="#">Cultura</a></li>
+            <li><a href="#">Tecnología</a></li>
+        </ul>
+    </nav>
+    
+    <main class="principal">
+        <section class="noticias">
+            <article class="noticia">
+                <h1>EE.UU sin inmigrantes</h1>
+                <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/8162/live/5c506530-986b-11ef-82c3-45a801b7330b.jpg.webp" alt="Migrante">
+
+                <p> La inmigración es uno de los principales temas de las elecciones presidenciales en Estados Unidos.
+
+                    Tanto el candidato republicano como la demócrata hablan de la necesidad de endurecer los controles sobre quienes entran en el país, en especial, en la frontera con México.
+                    
+                    Donald Trump ha advertido repetidamente de una "invasión" de inmigrantes y ha prometido llevar a cabo deportaciones masivas de indocumentados.
+                    
+                    Su rival demócrata, Kamala Harris, ha acusado al expresidente de "avivar las llamas del miedo y la división" en torno a la inmigración, pero reiteró, no obstante, su apoyo al proyecto de ley de seguridad fronteriza, que incluiría cientos de millones de dólares para reforzar la seguridad en la frontera sur del país.
+                    
+                    Pero, ¿qué papel juega la inmigración en Estados Unidos, la nación con la mayor población nacida en el exterior, y qué pasaría si no hubiera inmigrantes? </p>
+                    
+                    <h2>Población</h2>
+            
+                    <p> Sin inmigrantes, la población de EE.UU. disminuiría de manera significativa.
+
+                    La población nacida en el exterior alcanzó la cifra récord de 47,8 millones en 2023, lo que supone el 14,3% de la población estadounidense.
+
+                    México es por mucho el principal país de origen con 10,6 millones de personas, seguido de India, con 2,8 millones, y China, con 2,5 millones.
+
+                    Sin embargo, aunque el número de inmigrantes ha alcanzado una cifra récord, el crecimiento global de la población estadounidense se está ralentizando debido al descenso de la tasa de natalidad.<br>
+                       
+                    </p>
+                <a href="https://www.bbc.com/mundo/articles/cq6ly2r5rvvo" class="boton">Leer noticia completa</a>
+                <a href="../index.html">Volver al inicio</a>
+
+            </article>
+
+        </section>
+
+        <aside class="publicidad">
+            <h2>Publicidad</h2>
+            <div class="ad-space">
+                <p>Espacio publicitario</p>
+                <a href="https://www.coca-cola.com/hn/es/media-center/comparte-una-coca-cola-hn-y-els"><img src="https://www.coca-cola.com/content/dam/onexp/hn/es/media-center/article-6-comparte-una-coca-cola-hn-y-els/Amar-SAC-TCCC-HN_1440x810_v1.jpg/width1960.jpg" alt="Anuncio">
+                </a>
+
+                <a href="https://controlpublicidad.com/campanas-publicitarias/pepsi-lanza-la-campana-play-to-inspire/"><img src="https://controlpublicidad.com/wp-content/uploads/2024/05/anuncio-de-pepsi-play-to-inspire-2022-104400.jpg" alt="Anuncio">
+                </a>
+
+                <a href="https://www.swacolombia.com/la-oscura-historia-del-eslogan-de-nike-y-como-se-convirtio-en-una-marca-millonaria/"><img src="https://www.swacolombia.com/wp-content/uploads/2015/03/SWA_colombia_nike_just_do_it_redes_sociales_paginas_de_internet.jpg" alt="Anuncio"></a>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portal de Noticias NewsLive - Todos los derechos reservados.</p>
+        <p>Desarrollado por Camilo Jaimes</p>
+    </footer>
+
+    <script type="module">
+        import { actualizarFechaHora } from '../app.js';
+        actualizarFechaHora();
+        setInterval(actualizarFechaHora, 1000);
+      </script>
+</body>
+</html>

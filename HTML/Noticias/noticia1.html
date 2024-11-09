@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Noticias NewsLive</title>
+    <link rel="stylesheet" href="Noticias.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/Logoprincipal.png" alt="Logo NewsLive" class="logo">
+        <h1>Portal de Noticias "NewsLive"</h1>
+        <p id="fecha-actual"></p>
+        <p id="hora"></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Deportes</a></li>
+            <li><a href="#">Cultura</a></li>
+            <li><a href="#">Tecnología</a></li>
+        </ul>
+    </nav>
+    
+    <main class="principal">
+        <section class="noticias">
+            <article class="noticia">
+                <h1>¿Qué pasará si Trump gana las elecciones?</h2>
+                <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/7168/live/aa57fab0-9256-11ef-9303-4f3343461132.png.webp" alt="Donald Trump">
+
+                <p>Como alguien que ha investigado a la derecha política de Estados Unidos y sus influencias globales, Jacob Heilbrunn está convencido de que un segundo gobierno de Donald Trump sería muy distinto al primero.
+
+                    “Trump se ha radicalizado en los últimos cuatro años”, sostiene Heilbrunn, quien es el editor de la publicación de política exterior The National Interest y miembro senior del Eurasia Center del Atlantic Council, un centro de análisis internacional de EE.UU.
+                    
+                    A su juicio, el candidato presidencial republicano quiere evitar lo que considera errores de su primer mandato (2017-2021) y realizaría “una presidencia revolucionaria, tanto en política interior como exterior”.
+                    <br>
+                    <br>
+                    Si Trump es reelegido, “pasará a la historia como uno de los presidentes más influyentes, porque va a derribar el orden internacional que ha existido durante los últimos 70 o 75 años”, dice Heilbrunn en una entrevista con BBC Mundo. <br>
+                    
+                    <br>    
+                    El problema, apunta, es que “eso sería un bumerán, tanto económica como militarmente” y “socavaría la posición privilegiada que disfruta EE.UU.”.
+                    
+                    Lo que sigue es una síntesis del diálogo telefónico con el autor de “America Last”, un libro publicado este año sobre “el centenario romance de la derecha (estadounidense) con dictadores extranjeros”:
+                    
+                    Línea gris
+                    ¿Qué esperas para la política exterior de EE.UU. en caso de que Donald Trump sea reelegido?
+                    
+                    Esperaría una revisión drástica de los últimos 70 años de política exterior estadounidense, que desde la Segunda Guerra Mundial se ha basado en el libre comercio y en las alianzas en Asia y Europa.
+                    
+                    Trump se adhiere a una mentalidad anterior a la Segunda Guerra Mundial. Cree que Estados Unidos puede funcionar como una fortaleza que no necesita alianzas con países democráticos y que el libre comercio internacional es perjudicial para la economía estadounidense.
+                    <br>
+                    
+                    <br>
+                    Trump ya fue presidente de EEUU. Pero al parecer no esperas una continuación de lo que fue la política exterior de su primer mandato, sino un cambio fundamental...
+                    
+                    Sí. En el primer mandato empujó los límites, atacó a la OTAN y se arrimó a Corea del Norte y Rusia, pero no cortó nuestros lazos tradicionales en Asia o Europa. Amenazó con hacerlo. Esta vez, la amenaza se haría realidad.
+                    
+                    Creo que abandonaría formalmente la OTAN o simplemente declararía que no cree en el Artículo 5, que compromete la defensa mutua..</p>
+                <a href="https://www.bbc.com/mundo/articles/cy78vn7d8lro" class="boton">Leer noticia completa</a>
+                <a href="../index.html">Volver al inicio</a>
+
+            </article>
+
+        </section>
+
+        <aside class="publicidad">
+            <h2>Publicidad</h2>
+            <div class="ad-space">
+                <p>Espacio publicitario</p>
+                <a href="https://www.coca-cola.com/hn/es/media-center/comparte-una-coca-cola-hn-y-els"><img src="https://www.coca-cola.com/content/dam/onexp/hn/es/media-center/article-6-comparte-una-coca-cola-hn-y-els/Amar-SAC-TCCC-HN_1440x810_v1.jpg/width1960.jpg" alt="Anuncio">
+                </a>
+
+                <a href="https://controlpublicidad.com/campanas-publicitarias/pepsi-lanza-la-campana-play-to-inspire/"><img src="https://controlpublicidad.com/wp-content/uploads/2024/05/anuncio-de-pepsi-play-to-inspire-2022-104400.jpg" alt="Anuncio">
+                </a>
+
+                <a href="https://www.swacolombia.com/la-oscura-historia-del-eslogan-de-nike-y-como-se-convirtio-en-una-marca-millonaria/"><img src="https://www.swacolombia.com/wp-content/uploads/2015/03/SWA_colombia_nike_just_do_it_redes_sociales_paginas_de_internet.jpg" alt="Anuncio"></a>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portal de Noticias NewsLive - Todos los derechos reservados.</p>
+        <p>Desarrollado por Camilo Jaimes</p>
+    </footer>
+
+    <script type="module">
+        import { actualizarFechaHora } from '../app.js';
+        actualizarFechaHora();
+        setInterval(actualizarFechaHora, 1000);
+      </script>
+    </body>
+</html>
